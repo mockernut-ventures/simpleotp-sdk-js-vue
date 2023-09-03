@@ -1,0 +1,19 @@
+{
+  "name": "@simpleotp/vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:unit": "vitest"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@simpleotp/core": "^1.0.0",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "jsdom": "^22.1.0",
+    "vitest": "^0.34.3"
+  }
+}
