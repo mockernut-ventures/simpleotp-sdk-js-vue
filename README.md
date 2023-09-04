@@ -12,7 +12,7 @@
 
    ```javascript
    import { createApp } from 'vue';
-   import SimpleOTPPlugin from './path-to-your-plugin'; // Import the plugin
+   import SimpleOTPPlugin from '@simpleotp/vue'; // Import the plugin
 
    const app = createApp(App);
 
@@ -39,7 +39,7 @@
    </template>
 
    <script>
-   import { useSimpleOTP } from './path-to-your-plugin'; // Import the useSimpleOTP function
+   import { useSimpleOTP } from '@simpleotp/vue'; // Import the useSimpleOTP function
 
    export default {
      setup() {
