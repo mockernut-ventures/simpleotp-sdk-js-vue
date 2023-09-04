@@ -147,7 +147,7 @@
    ```vue
    <template>
      <a href="#">
-       <-- User Icon goes here -->
+       <!-- User Icon goes here -->
        <span @click="signIn" v-if="!isAuthenticated">&nbsp;Sign in <span aria-hidden="true">&rarr;</span></span>
        <span @click="signOut" v-else>&nbsp;Sign out <span aria-hidden="true">&rarr;</span></span>
      </a>
