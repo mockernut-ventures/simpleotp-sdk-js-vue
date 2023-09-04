@@ -29,7 +29,7 @@
    After installing the plugin, you can use it in any Vue component by injecting it using the `useSimpleOTP` function. Here's an example of how to use the sign-in flow, the auth flow, and the sign-out flow in different Vue components using Tailwind CSS for styling:
 
    SignIn:
-   ```javascript
+   ```vue
    <template>
      <div class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -104,7 +104,7 @@
    </script>
    ```
    Auth:
-   ```javascript
+   ```vue
    <template>
      <div class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -144,7 +144,7 @@
    ```
 
    SignOut:
-   ```javascript
+   ```vue
    <template>
      <a href="#">
        <-- User Icon goes here -->
