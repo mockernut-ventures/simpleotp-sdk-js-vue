@@ -18,8 +18,8 @@
 
    // Install the SimpleOTP plugin with your configuration options
    app.use(SimpleOTPPlugin, {
-     siteID: 'your-site-id',
-     apiURL: 'your-api-url' // Optional, can be null
+     siteID: 'your-site-id', // This will be given to you after you sign up for a Simple OTP subscription and create a site
+     apiURL: 'your-api-url' // Optional, can be null - only used for self hosting
    });
 
    app.mount('#app');
