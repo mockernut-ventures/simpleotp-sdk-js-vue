@@ -35,34 +35,30 @@
        <p v-else>User is not authenticated</p>
        <button @click="signIn">Sign In</button>
        <button @click="signOut">Sign Out</button>
+       <button @click="authenticate">Authenticate</button>
      </div>
    </template>
-
-   <script>
-   import { useSimpleOTP } from '@simpleotp/vue'; // Import the useSimpleOTP function
-
-   export default {
-     setup() {
-       const simpleOTP = useSimpleOTP(); // Inject the SimpleOTP instance
-
-       const isAuthenticated = simpleOTP.isAuthenticatedRef(); // Access the isAuthenticatedRef
-
-       const signIn = async () => {
-         const response = await simpleOTP.authWithURLCode();
-         // Handle the authentication response as needed
-       };
-
-       const signOut = () => {
-         simpleOTP.signOut();
-         // Perform any additional sign-out logic
-       };
-
-       return {
-         isAuthenticated,
-         signIn,
-         signOut,
-       };
-     },
+   
+   <script setup>
+   import { useSimpleOTP } from './path-to-your-plugin';
+   
+   const simpleOTP = useSimpleOTP();
+   const isAuthenticated = simpleOTP.isAuthenticatedRef();
+   
+   const signIn = async () => {
+     const response = await simpleOTP.signIn('your@email.com');
+     // Handle the authentication response as needed
+   };
+   
+   const signOut = () => {
+     simpleOTP.signOut();
+     // Perform any additional sign-out logic
+   };
+   
+   const authenticate = async () => {
+     // Example: Authenticate after signing in
+     const authResponse = await simpleOTP.authWithURLCode();
+     // Handle the authentication response as needed
    };
    </script>
    ```
