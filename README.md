@@ -1,6 +1,6 @@
 # simpleotp-sdk-js-vue
 
-1. **Installation**:
+# **Installation**:
    First, make sure you have the `@simpleotp/core` library installed in your project since the Vue Simple OTP plugin depends on it. Make sure to install this plugin as well:
 
    ```bash
@@ -25,7 +25,7 @@
    app.mount('#app');
    ```
 
-3. **Usage**:
+# **Usage**:
    After installing the plugin, you can use it in any Vue component by injecting it using the `useSimpleOTP` function. Here's an example of how to use the sign-in flow, the auth flow, and the sign-out flow in different Vue components using Tailwind CSS for styling:
 
    SignIn:
@@ -174,7 +174,7 @@
 
    In this example, the Vue component uses the `useSimpleOTP` function to inject the `VueSimpleOTP` instance, allowing you to access its methods and state.
 
-5. **Methods and State**:
+# **Methods and State**:
    The `VueSimpleOTP` class extends the `SimpleOTP` class and provides methods like `authWithURLCode`, `signOut`, and access to read-only references to `isAuthenticated` and `user`. You can call these methods and use the state in your Vue component's setup function, as shown in the example above.
 
    - `simpleOTP.authWithURLCode()`: This method is used for authentication with a URL code.
