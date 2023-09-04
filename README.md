@@ -144,7 +144,7 @@
    ```
 
    SignOut:
-   ```
+   ```javascript
    <template>
      <a href="#">
        <-- User Icon goes here -->
