@@ -1,7 +1,7 @@
 # simpleotp-sdk-js-vue
 
 1. **Installation**:
-   First, make sure you have the `@simpleotp/core` library installed in your project since the React Simple OTP plugin depends on it. Make sure to install this plugin as well.
+   First, make sure you have the `@simpleotp/core` library installed in your project since the Vue Simple OTP plugin depends on it. Make sure to install this plugin as well:
 
    ```bash
    npm install @simpleotp/core
