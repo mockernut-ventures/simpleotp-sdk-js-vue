@@ -11,6 +11,15 @@ class VueSimpleOTP extends SimpleOTP {
     this._isAuthenticatedRef = ref(Boolean(this._userRef.value))
   }
 
+  async auth(code) {
+    const resp = await super.auth(code)
+    if (resp.code === AuthStatusCode.OK.description) {
+      this._isAuthenticatedRef.value = true
+      this._userRef.value = this.getUser()
+    }
+    return resp
+  }
+
   async authWithURLCode() {
     const resp = await super.authWithURLCode()
     if (resp.code === AuthStatusCode.OK.description) {
